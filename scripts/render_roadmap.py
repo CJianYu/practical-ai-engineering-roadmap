@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
 from typing import Any
 
 from validate_roadmap import ROOT, load_roadmap, validate
