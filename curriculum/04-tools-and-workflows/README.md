@@ -41,4 +41,6 @@
 - [Anthropic — Building Effective Agents](https://www.anthropic.com/research/building-effective-agents)
 - [Stanford CS329Z](https://cs329z.stanford.edu/)
 
+**Follow along:** [Weekly assignments](../../STUDY_GUIDE.md) · [Interview preparation](../../interview/README.md) · [面试中文指南](../../interview/README.zh-CN.md)
+
 [← Back to roadmap](../../ROADMAP.md)

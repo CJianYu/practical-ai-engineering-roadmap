@@ -2,6 +2,8 @@
 
 Use resources to unblock a build, not to postpone one. Pick one primary course per phase and treat everything else as reference material.
 
+For the default reading order, use the [study guide](../STUDY_GUIDE.md). For interview-specific resources and drills, use [interview preparation](../interview/README.md) ([中文](../interview/README.zh-CN.md)).
+
 ## Overall map
 
 ### Andrew Ng — AI Engineering Skills Map

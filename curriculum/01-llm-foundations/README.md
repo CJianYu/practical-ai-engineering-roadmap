@@ -41,4 +41,6 @@
 - [Stanford CS336 — Language Modeling from Scratch](https://stanford-cs336.github.io/)
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 
+**Follow along:** [Weekly assignments](../../STUDY_GUIDE.md) · [Interview preparation](../../interview/README.md) · [面试中文指南](../../interview/README.zh-CN.md)
+
 [← Back to roadmap](../../ROADMAP.md)

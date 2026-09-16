@@ -41,4 +41,6 @@
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands)
 
+**Follow along:** [Weekly assignments](../../STUDY_GUIDE.md) · [Interview preparation](../../interview/README.md) · [面试中文指南](../../interview/README.zh-CN.md)
+
 [← Back to roadmap](../../ROADMAP.md)

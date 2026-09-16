@@ -41,4 +41,6 @@
 - [Architecture decision template](../../templates/architecture-decision-record.md)
 - [Capstone specification](../../capstone/README.md)
 
+**Follow along:** [Weekly assignments](../../STUDY_GUIDE.md) · [Interview preparation](../../interview/README.md) · [面试中文指南](../../interview/README.zh-CN.md)
+
 [← Back to roadmap](../../ROADMAP.md)

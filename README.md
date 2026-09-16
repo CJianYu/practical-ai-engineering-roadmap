@@ -11,6 +11,13 @@
 
 > Not another link dump. Every stage follows **Learn → Build → Prove → Explain**.
 
+## Follow the path
+
+1. **[Follow-along study guide](STUDY_GUIDE.md)**: assigned reading, minimum build and exit checks for every week.
+2. **[Interview preparation](interview/README.md)**: weekly prompts, answer checkpoints, coding/system-design drills and a four-week sprint.
+
+The 12 weeks are reference stages; allow 16–20 calendar weeks at eight hours per week. Two introductory labs are implemented; later stages are capstone assignments.
+
 ## Why this exists
 
 AI engineering is not just prompt writing or calling a model API. Production systems combine software engineering, model behavior, retrieval, tools, evaluations, safety, observability, and product judgment.
@@ -91,6 +98,8 @@ Our evidence ladder is:
 See the generated [full roadmap](ROADMAP.md) and the machine-readable [roadmap.yaml](roadmap.yaml).
 
 ## Start here
+
+Requires Python 3.11+; Python 3.12 is recommended.
 
 ```bash
 git clone https://github.com/CJianYu/practical-ai-engineering-roadmap.git

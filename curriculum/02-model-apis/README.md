@@ -41,4 +41,6 @@
 - [LiteLLM documentation](https://docs.litellm.ai/)
 - [Lab 01](../../labs/lab01_structured_output/README.md)
 
+**Follow along:** [Weekly assignments](../../STUDY_GUIDE.md) · [Interview preparation](../../interview/README.md) · [面试中文指南](../../interview/README.zh-CN.md)
+
 [← Back to roadmap](../../ROADMAP.md)

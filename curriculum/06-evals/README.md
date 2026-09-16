@@ -41,4 +41,6 @@
 - [OpenAI — Evals guide](https://platform.openai.com/docs/guides/evals)
 - [Eval report template](../../templates/eval-report.md)
 
+**Follow along:** [Weekly assignments](../../STUDY_GUIDE.md) · [Interview preparation](../../interview/README.md) · [面试中文指南](../../interview/README.zh-CN.md)
+
 [← Back to roadmap](../../ROADMAP.md)

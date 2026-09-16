@@ -48,6 +48,14 @@ Write or record a three-minute explanation:
 - What evidence supports the decision?
 - What remains uncertain?
 
+## Interview practice
+
+- Prompt / drill:
+- Score (0: cannot answer, 1: definition, 2: trade-offs, 3: project evidence):
+- Code, report or recording:
+- Missed follow-up question:
+- Next practice date:
+
 ## Next week
 
 The single most important improvement is:
