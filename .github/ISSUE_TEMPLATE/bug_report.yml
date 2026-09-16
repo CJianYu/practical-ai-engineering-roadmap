@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a broken lab, incorrect instruction, or reproducibility issue
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make the roadmap reproducible.
+  - type: input
+    id: location
+    attributes:
+      label: File or module
+      placeholder: labs/lab01_structured_output
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and reproduction steps
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Python 3.12, macOS 15

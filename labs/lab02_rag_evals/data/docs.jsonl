@@ -1,0 +1,5 @@
+{"id": "pricing", "title": "Starter plan pricing and limits", "text": "The Starter plan includes 100 image generations each month. Unused generations do not roll over. Customers can cancel before the next billing date."}
+{"id": "troubleshooting", "title": "Failed generation troubleshooting", "text": "When an image generation fails, retry once with the same idempotency key. Do not charge the customer twice. If the retry fails, record the provider error and return the generation credit."}
+{"id": "refunds", "title": "Refund policy", "text": "Duplicate charges are eligible for a refund after payment records are verified. A support specialist must approve refunds above fifty dollars."}
+{"id": "security", "title": "Tool permissions and approval", "text": "Read-only searches can run automatically. Creating issues, refunding payments, modifying code, and deploying changes require explicit human approval and an audit event."}
+{"id": "accounts", "title": "Account and login help", "text": "Users can reset a forgotten password by email. Support staff must never request the user's password or authentication token."}

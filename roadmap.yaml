@@ -1,0 +1,229 @@
+version: "0.1.0"
+title: Practical AI Engineering Roadmap
+tagline: A project-based, eval-driven path from software engineer to Applied AI Engineer.
+duration_weeks: 12
+hours_per_week: 8
+primary_audience: Software engineers transitioning into Applied AI Engineering.
+prerequisites:
+  - Ability to build and test a small web service
+  - Working knowledge of Python or another backend language
+  - Basic Git, HTTP, JSON, databases, and deployment experience
+principles:
+  - Evals are the spine
+  - Prefer deterministic workflows before autonomous agents
+  - Build one capstone deeply
+  - Measure quality, cost, latency, and safety together
+  - Treat retrieved content and tool output as untrusted input
+weeks:
+  - week: 0
+    id: orientation
+    title: Orientation and Baseline
+    module: curriculum/00-orientation/README.md
+    estimated_hours: 4
+    learn:
+      - Applied AI Engineer versus ML Engineer versus Research Engineer
+      - Task selection, scope, acceptance criteria, and evidence
+    build: A one-page capstone proposal and an initial set of 20 representative evaluation cases.
+    prove:
+      - The problem has clear users, tasks, boundaries, and failure definitions
+      - Every planned feature maps to a measurable acceptance criterion
+    metrics:
+      - Eval case count
+      - Requirements coverage
+  - week: 1
+    id: llm-foundations
+    title: LLM Foundations for Builders
+    module: curriculum/01-llm-foundations/README.md
+    estimated_hours: 8
+    learn:
+      - Tokens, embeddings, attention, transformer blocks, decoding, and context windows
+      - Why models are probabilistic and how that changes software design
+    build: A token, context, latency, and cost exploration notebook or service.
+    prove:
+      - Explain the generation loop without relying on framework vocabulary
+      - Demonstrate how prompts, temperature, context, and model choice affect outputs
+    metrics:
+      - Token count
+      - Latency
+      - Estimated cost
+  - week: 2
+    id: model-apis
+    title: Model APIs and Structured Output
+    module: curriculum/02-model-apis/README.md
+    estimated_hours: 8
+    learn:
+      - Structured outputs, schema validation, streaming, retries, timeouts, fallbacks, and model routing
+      - Context engineering and prompt versioning
+    build: A typed, provider-neutral model gateway.
+    prove:
+      - Invalid model output cannot cross the application boundary silently
+      - Calls expose latency, token usage, cost, retries, and prompt version
+    metrics:
+      - Schema-valid response rate
+      - Retry rate
+      - p50 and p95 latency
+      - Cost per request
+  - week: 3
+    id: rag-foundations
+    title: RAG Foundations
+    module: curriculum/03-rag/README.md
+    estimated_hours: 8
+    learn:
+      - Document processing, chunking, metadata, embeddings, indexing, retrieval, and citations
+      - Retrieval failure versus generation failure
+    build: A cited document assistant with an ingestion pipeline.
+    prove:
+      - The system retrieves the correct evidence for a labeled query set
+      - Answers cite valid sources and abstain when evidence is missing
+    metrics:
+      - Recall at k
+      - Mean reciprocal rank
+      - Citation correctness
+      - Abstention accuracy
+  - week: 4
+    id: retrieval-improvement
+    title: Retrieval Improvement
+    module: curriculum/03-rag/README.md
+    estimated_hours: 8
+    learn:
+      - Keyword search, vector search, hybrid retrieval, metadata filters, query rewriting, and reranking
+      - Offline retrieval experiments and error slicing
+    build: A hybrid retrieval pipeline with a reranking experiment.
+    prove:
+      - The improved pipeline beats the Week 3 baseline on the same eval set
+      - Trade-offs in quality, latency, and cost are documented
+    metrics:
+      - Recall lift
+      - NDCG or MRR lift
+      - Retrieval latency
+  - week: 5
+    id: tools-workflows
+    title: Tools and Deterministic Workflows
+    module: curriculum/04-tools-and-workflows/README.md
+    estimated_hours: 8
+    learn:
+      - Function calling, tool schemas, MCP concepts, validation, idempotency, retries, and compensating actions
+      - When normal code is better than an agent loop
+    build: A tool registry and a deterministic multi-step workflow.
+    prove:
+      - Tool selection and arguments are evaluated separately from final response quality
+      - Write operations are idempotent and protected by approval gates
+    metrics:
+      - Tool-selection accuracy
+      - Argument accuracy
+      - Tool execution success rate
+  - week: 6
+    id: agents-memory
+    title: Agents, State, and Memory
+    module: curriculum/05-agents-and-memory/README.md
+    estimated_hours: 8
+    learn:
+      - Agent loops, stopping conditions, planning, reflection, checkpoints, short-term state, and long-term memory
+      - Human-in-the-loop patterns and recovery from partial failure
+    build: A stateful single-agent workflow with checkpointing and approval.
+    prove:
+      - Tasks resume after interruption
+      - Loops terminate safely and repeated tool calls are detected
+    metrics:
+      - Task success rate
+      - Average steps per task
+      - Recovery success rate
+      - Loop-limit violations
+  - week: 7
+    id: evals
+    title: Evaluation-Driven Development
+    module: curriculum/06-evals/README.md
+    estimated_hours: 10
+    learn:
+      - Golden datasets, code graders, LLM-as-judge, trajectory evaluation, human calibration, and error analysis
+      - Request, environment, stopping criteria, and scorer as a benchmark tuple
+    build: A repeatable evaluation harness with at least 50 representative cases.
+    prove:
+      - Every significant system change produces a comparable evaluation report
+      - Failure modes are categorized and linked to the next engineering action
+    metrics:
+      - Task success rate
+      - Pass at k and pass power k where relevant
+      - Judge-human agreement
+      - Regression count
+  - week: 8
+    id: safety
+    title: Safety, Permissions, and Adversarial Inputs
+    module: curriculum/07-safety/README.md
+    estimated_hours: 8
+    learn:
+      - Direct and indirect prompt injection, data leakage, least privilege, sandboxing, approvals, and audit logs
+      - Threat modeling for tools and retrieved content
+    build: A permission policy and adversarial test suite.
+    prove:
+      - Untrusted content cannot authorize tool use
+      - Sensitive or destructive actions require explicit approval
+    metrics:
+      - Unauthorized action rate
+      - Attack success rate on the local red-team set
+      - Approval bypass count
+  - week: 9
+    id: production
+    title: Production and LLMOps
+    module: curriculum/08-production/README.md
+    estimated_hours: 8
+    learn:
+      - Tracing, monitoring, budgets, caches, rate limits, fallbacks, incident response, and feedback collection
+      - Versioning prompts, data, models, tools, and eval sets
+    build: A deployed service with observability and a regression gate.
+    prove:
+      - Operators can diagnose a failed task from traces
+      - The service respects latency and cost budgets under expected load
+    metrics:
+      - Availability
+      - p50 and p95 latency
+      - Cost per successful task
+      - Fallback rate
+  - week: 10
+    id: coding-agents
+    title: Coding Agents and Sandboxed Execution
+    module: curriculum/09-coding-agents/README.md
+    estimated_hours: 8
+    learn:
+      - Repository context, planning, file editing, command policies, test execution, diffs, and review gates
+      - Long-running task harnesses and bounded autonomy
+    build: A coding workflow that produces a tested patch inside a sandbox.
+    prove:
+      - The agent cannot modify files outside its allowed scope
+      - A patch is never merged or deployed without review
+    metrics:
+      - Patch success rate
+      - Test-pass rate
+      - Files changed per task
+      - Policy violation count
+  - week: 11
+    id: shaping-the-build
+    title: Shape the Build
+    module: curriculum/10-shaping-the-build/README.md
+    estimated_hours: 6
+    learn:
+      - Task decomposition, user value, AI-versus-code boundaries, rapid prototypes, and risk-adjusted iteration
+      - Architecture decision records and evidence-backed prioritization
+    build: A revised product spec and a set of architecture decisions based on eval evidence.
+    prove:
+      - Features are prioritized by user value, failure risk, and measurable impact
+      - The team can explain why each AI component exists
+    metrics:
+      - Acceptance-criteria coverage
+      - Decisions supported by evidence
+  - week: 12
+    id: capstone
+    title: Capstone and Career Evidence
+    module: capstone/README.md
+    estimated_hours: 12
+    learn:
+      - Technical storytelling, reproducibility, demo design, and portfolio evidence
+      - Translating system results into honest resume bullets
+    build: A public demo, repository, architecture diagram, eval report, security model, and short English walkthrough.
+    prove:
+      - Another engineer can reproduce the system and its evaluation
+      - Claims in the demo and resume are backed by artifacts or metrics
+    metrics:
+      - Reproducibility checklist completion
+      - Eval coverage
+      - Demo success rate

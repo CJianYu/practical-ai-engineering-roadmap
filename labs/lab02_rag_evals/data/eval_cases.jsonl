@@ -1,0 +1,6 @@
+{"id": "q1", "query": "How many image generations are in the Starter plan?", "relevant_doc_ids": ["pricing"]}
+{"id": "q2", "query": "What should happen after an image generation fails?", "relevant_doc_ids": ["troubleshooting"]}
+{"id": "q3", "query": "Can the system automatically refund a duplicate charge?", "relevant_doc_ids": ["refunds", "security"]}
+{"id": "q4", "query": "Which actions need explicit human approval?", "relevant_doc_ids": ["security"]}
+{"id": "q5", "query": "How can a user recover a forgotten password?", "relevant_doc_ids": ["accounts"]}
+{"id": "q6", "query": "Do unused Starter generations roll over?", "relevant_doc_ids": ["pricing"]}

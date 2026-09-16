@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: Practical AI Engineering Roadmap
+message: If this roadmap supports your teaching or research, please cite the repository.
+type: software
+authors:
+  - family-names: Chen
+    given-names: Jianyu
+    alias: CJianYu
+repository-code: https://github.com/CJianYu/practical-ai-engineering-roadmap
+url: https://github.com/CJianYu/practical-ai-engineering-roadmap
+license: MIT
+version: 0.1.0
+date-released: 2026-09-16

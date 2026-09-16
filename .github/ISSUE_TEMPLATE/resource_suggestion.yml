@@ -1,0 +1,42 @@
+name: Resource suggestion
+description: Suggest a high-signal primary or official learning resource
+title: "[Resource]: "
+labels: [resource]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource name and URL
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - LLM foundations
+        - Model APIs
+        - RAG
+        - Tools and workflows
+        - Agents and memory
+        - Evals
+        - Safety
+        - Production
+        - Coding agents
+        - Shape the build
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Exactly when should a learner use it?
+      description: Explain the learning gap it fills. Do not only summarize the resource.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Why is it high signal?
+      description: Primary source, official docs, reproducible implementation, production evidence, or benchmark?
+    validations:
+      required: true
