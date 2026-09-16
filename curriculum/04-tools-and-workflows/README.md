@@ -11,6 +11,8 @@
 
 ## Build
 
+Start with [Lab 03](../../labs/lab03_tool_calling/README.md) ([中文](../../labs/lab03_tool_calling/README.zh-CN.md)), then extend it in your capstone.
+
 - Implement a small tool registry with explicit input and output schemas.
 - Create one deterministic multi-step workflow before adding an open agent loop.
 - Add idempotency keys and approval to every write action.

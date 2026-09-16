@@ -16,7 +16,7 @@
 1. **[Follow-along study guide](STUDY_GUIDE.md)**: assigned reading, minimum build and exit checks for every week.
 2. **[Interview preparation](interview/README.md)**: weekly prompts, answer checkpoints, coding/system-design drills and a four-week sprint.
 
-The 12 weeks are reference stages; allow 16–20 calendar weeks at eight hours per week. Two introductory labs are implemented; later stages are capstone assignments.
+The 12 weeks are reference stages; allow 16–20 calendar weeks at eight hours per week. Five offline labs cover validation, retrieval, tools, recovery and evaluation; production integration remains a capstone assignment.
 
 ## Why this exists
 
@@ -139,6 +139,12 @@ Then:
 - [Lab 01 — Structured Output](labs/lab01_structured_output/README.md): validate nondeterministic model output behind a typed boundary.
 - [Lab 02 — Eval-driven RAG](labs/lab02_rag_evals/README.md): implement retrieval and measure Recall@k and MRR before adding generation.
 
+- [Lab 03 — Tool Calling, Approval and Idempotency](labs/lab03_tool_calling/README.md): offline exercise for Week 5.
+- [Lab 04 — Agent State, Checkpoints and Recovery](labs/lab04_agent_state/README.md): offline exercise for Week 6.
+- [Lab 05 — Agent Evaluation and Regression Gates](labs/lab05_agent_evals/README.md): offline exercise for Week 7.
+
+[All labs](labs/README.md) · [中文实验说明](labs/lab03_tool_calling/README.zh-CN.md)
+
 The labs intentionally start framework-light. You should understand the loop before outsourcing it to an abstraction.
 
 ## Capstone deliverables
@@ -209,7 +215,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md). Resource suggestions must explai
 
 ## Roadmap status
 
-**v0.1.0** includes the complete 12-week path, two runnable labs, templates, and a capstone specification. Upcoming releases will add tool-calling, agent harness, safety, and observability labs.
+**v0.1.0** includes the complete 12-week path, two runnable labs, templates, and a capstone specification. The current main branch additionally includes tool approval, agent recovery and regression-evaluation labs. Safety and observability extensions remain planned.
 
 See [CHANGELOG.md](CHANGELOG.md).
 

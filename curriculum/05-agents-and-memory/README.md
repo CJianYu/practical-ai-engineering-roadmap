@@ -11,6 +11,8 @@
 
 ## Build
 
+Start with [Lab 04](../../labs/lab04_agent_state/README.md) ([中文](../../labs/lab04_agent_state/README.zh-CN.md)), then extend it in your capstone.
+
 - Implement a framework-light agent loop, then optionally reimplement it with an orchestration framework.
 - Persist state and resume one interrupted task.
 - Store structured decisions, not an unbounded transcript dump.

@@ -6,6 +6,10 @@ All notable changes to this project will be documented here.
 
 ### Added
 
+- Offline Labs 03–05: scoped tool approval, durable agent recovery and evaluation regression gates
+- English/Chinese walkthroughs with failure exercises and explicit production limitations
+- Tests for crash recovery in a new process, transaction rollback and hidden per-case regressions
+
 - Bilingual follow-along study guides with weekly reading, minimum builds and exit checks
 - Bilingual interview guides with curated links, 13 weekly prompts and answer checkpoints
 - Coding/system-design drills, a four-week interview sprint and progress tracking
@@ -13,9 +17,7 @@ All notable changes to this project will be documented here.
 
 ### Planned
 
-- Tool-calling and deterministic workflow lab
-- Stateful agent harness lab
-- Evaluation harness and judge-calibration lab
+- Live-model evaluation and judge-calibration extension
 - Prompt-injection and permission-boundary lab
 - Tracing, budgets, and production report example
 

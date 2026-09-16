@@ -10,7 +10,7 @@ The 12 weeks are stage labels, not a job guarantee. The original estimates total
 
 Use each eight-hour block for two hours of selected study, four of building/evaluation, one of interview practice and one of review. Assigned topics are reading scopes, not claims about completing full courses in two hours. During active applications, add two–three hours per week or extend the schedule.
 
-**Implementation status:** only Lab 01 (mock classifier) and Lab 02 (lexical retrieval, six queries) have supplied implementations. Later stages are assignments for your own capstone; the capstone directory contains a specification, not a finished application. Live model APIs may incur fees: start offline and set your own budget before connecting a provider.
+**Implementation status:** five offline labs are supplied: structured validation, lexical retrieval, tool approval, state recovery and fixture-based evaluation. Production integration remains an assignment for your own capstone; the capstone directory contains a specification, not a finished application. Live model APIs may incur fees: start offline and set your own budget before connecting a provider.
 
 ## Start today
 
@@ -61,6 +61,8 @@ Use each eight-hour block for two hours of selected study, four of building/eval
 <a id="week-5"></a>
 ## Week 5 — Tool workflows
 
+**Start with:** [Lab 03](labs/lab03_tool_calling/README.md)
+
 1. **Study:** [Anthropic — Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) — Read workflows, routing and tool design; optionally study Agentic AI tool use.
 2. **Build:** Implement two read-only tools and a draft-issue tool; writes use an explicit approval boundary.
 3. **Exit check:** Test wrong arguments, tool errors and duplicate requests; explain idempotency.
@@ -69,6 +71,8 @@ Use each eight-hour block for two hours of selected study, four of building/eval
 <a id="week-6"></a>
 ## Week 6 — Stateful agents
 
+**Start with:** [Lab 04](labs/lab04_agent_state/README.md)
+
 1. **Study:** [Anthropic — Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) — Read the agent loop and stopping conditions; optionally study planning.
 2. **Build:** Add step/time budgets, persisted state and approval; simulate failure after a tool call.
 3. **Exit check:** Resume without duplicating a write; prove termination and identify the approved action precisely.
@@ -76,6 +80,8 @@ Use each eight-hour block for two hours of selected study, four of building/eval
 
 <a id="week-7"></a>
 ## Week 7 — Evaluation harness
+
+**Start with:** [Lab 05](labs/lab05_agent_evals/README.md)
 
 1. **Study:** [DeepLearning.AI — Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) — Prioritize component evaluation, trajectory evaluation and judge calibration.
 2. **Build:** Grow to at least 50 cases, separate development/test sets, add deterministic graders and human review.

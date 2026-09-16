@@ -11,6 +11,8 @@
 
 ## Build
 
+Start with [Lab 05](../../labs/lab05_agent_evals/README.md) ([中文](../../labs/lab05_agent_evals/README.zh-CN.md)), then extend it in your capstone.
+
 - Create at least 50 representative cases from real or realistically simulated tasks.
 - Use deterministic graders wherever the expected state can be computed.
 - Calibrate any LLM judge against a small human-labeled set.

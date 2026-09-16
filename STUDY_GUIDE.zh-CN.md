@@ -10,7 +10,7 @@
 
 每个 8 小时学习单元：2 小时看资料、4 小时开发与评测、1 小时面试练习、1 小时复盘。这里的阅读范围是选读任务，不是声称能在两小时内学完整门课程。专注投递时另留每周 2–3 小时，或延长周期。
 
-**仓库现状：**只有 Lab 01（Mock 分类器）和 Lab 02（词法检索、6 条查询）提供现成实现。其余阶段是你要在自己的 Capstone 中完成的任务，Capstone 目录是规格说明，不是完整产品。模型 API 可能收费；先运行离线 Lab，再为真实调用设置自己的预算。
+**仓库现状：**已提供五个离线 Lab：结构化校验、词法检索、工具审批、状态恢复与固定样例评测。生产集成仍需你在自己的 Capstone 中完成，Capstone 目录是规格说明，不是完整产品。模型 API 可能收费；先运行离线 Lab，再为真实调用设置自己的预算。
 
 ## 今天先做什么
 
@@ -61,6 +61,8 @@
 <a id="week-5"></a>
 ## Week 5 — 工具工作流
 
+**先运行:** [Lab 03](labs/lab03_tool_calling/README.zh-CN.md)
+
 1. **学:** [Anthropic — Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) — 读 Workflow、路由和工具设计；可补 Agentic AI 工具调用内容。
 2. **做:** 实现两个只读工具和一个 Issue 草稿工具，写入需要明确审批边界。
 3. **验收:** 测试错误参数、工具失败和重复请求，讲清幂等性。
@@ -69,6 +71,8 @@
 <a id="week-6"></a>
 ## Week 6 — 有状态 Agent
 
+**先运行:** [Lab 04](labs/lab04_agent_state/README.zh-CN.md)
+
 1. **学:** [Anthropic — Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) — 读 Agent Loop 与终止条件，可选学规划。
 2. **做:** 加入步数/时间预算、持久化状态与审批，模拟工具调用后中断。
 3. **验收:** 恢复时不重复写入，验证能终止且审批对应明确动作。
@@ -76,6 +80,8 @@
 
 <a id="week-7"></a>
 ## Week 7 — 系统化评测
+
+**先运行:** [Lab 05](labs/lab05_agent_evals/README.zh-CN.md)
 
 1. **学:** [DeepLearning.AI — Evaluating AI Agents](https://www.deeplearning.ai/short-courses/evaluating-ai-agents/) — 优先学习组件评测、轨迹评测和 Judge 校准。
 2. **做:** 扩展到至少 50 条样例，分开发/测试集，增加确定性评分与人工复核。

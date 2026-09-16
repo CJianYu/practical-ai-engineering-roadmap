@@ -15,7 +15,7 @@
 1. **[按周学习指南](STUDY_GUIDE.zh-CN.md)**：每周先看什么、做什么、做到哪里可以继续。
 2. **[面试准备与资源](interview/README.zh-CN.md)**：对应每周的练习题、答题要点、编程/系统设计与四周冲刺。
 
-12 周是参考阶段；每周 8 小时时可按 16–20 周完成。当前有两个入门 Lab，其余阶段是 Capstone 实践任务。
+12 周是参考阶段；每周 8 小时时可按 16–20 周完成。当前有五个离线 Lab，覆盖校验、检索、工具、恢复与评测；生产集成仍需在 Capstone 中完成。
 
 ## 为什么做这个项目
 
@@ -111,6 +111,14 @@ make validate
 4. 为自己的 Capstone 选一个真实产品或业务领域；
 5. 每周发布一个可运行、可量化的成果。
 
+## 新增离线实验（Week 5–7）
+
+- [Lab 03 — 工具调用、审批与幂等](labs/lab03_tool_calling/README.zh-CN.md)
+- [Lab 04 — Agent 状态、检查点与恢复](labs/lab04_agent_state/README.zh-CN.md)
+- [Lab 05 — Agent 评测与回归门禁](labs/lab05_agent_evals/README.zh-CN.md)
+
+[完整实验顺序](labs/README.md)。全部离线运行，无需 API Key；真实模型和生产环境集成仍属于后续项目任务。
+
 ## 课程模块
 
 | 模块 | 目标 |
@@ -162,7 +170,7 @@ make validate
 
 ## 项目状态
 
-**v0.1.0** 已包含完整 12 周路线、两个可运行 Lab、模板和 Capstone Spec。后续将继续增加工具调用、Agent Harness、安全和可观测性实验。
+**v0.1.0** 已包含完整 12 周路线、两个可运行 Lab、模板和 Capstone Spec。当前 main 分支已新增工具审批、状态恢复和评测回归实验；安全与可观测性扩展仍在计划中。
 
 ## 支持项目
 
